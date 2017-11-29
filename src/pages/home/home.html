@@ -1,18 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="colbat">
+    
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    
+    <ion-buttons end>
+      
+    <button navPush="#"ion-button>
+      <ion-icon name="add"></ion-icon>
+    </button>
+  
+    </ion-buttons>
+    <ion-title>Accueil</ion-title>
+ 
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <h3>Ionic Menu Starter</h3>
+  <div id="date">
+        <h1>{{data}}</h1>
+        <p>Lorem ipsum color </p>
+  </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+   <div id="Content">
+    
+  </div> 
+  
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
