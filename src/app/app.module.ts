@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 
 //Pages
@@ -33,7 +34,9 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    NgCalendarModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
