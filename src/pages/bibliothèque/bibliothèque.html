@@ -14,6 +14,103 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+    <div padding>
+        
+      <ion-segment [(ngModel)]="pet">
+          
+        <ion-segment-button value="kittens">
+            Licence 1
+          </ion-segment-button>
+          
+          <ion-segment-button value="puppies">
+            Licence 2
+          </ion-segment-button>
+
+          <ion-segment-button value="licence 3">
+              Licence 3
+            </ion-segment-button>
+
+            <ion-segment-button value="Master 1">
+                Master 1
+            </ion-segment-button>
+
+            <ion-segment-button value="Master 2">
+                Master 2
+            </ion-segment-button>
+        
+        </ion-segment>
+      
+      </div>
+      
+      <div [ngSwitch]="pet">
+       
+        <ion-list *ngSwitchCase="'puppies'">
+         
+          <ion-item>
+            
+            <ion-thumbnail item-start>
+              <img src="../assets/imgs/français.jpg">
+            </ion-thumbnail>
+            <h2>Français</h2>
+          
+          </ion-item>
+          
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'kittens'">
+          
+          <ion-item>
+            
+            <ion-thumbnail item-start>
+              <img src="../assets/imgs/english.jpg">
+            </ion-thumbnail>
+            <h2>Anglais</h2>
+          
+          </ion-item>
+        
+        </ion-list>
+        
+        <ion-list *ngSwitchCase="'licence 3'">
+            
+             <ion-item>
+               
+               <ion-thumbnail item-start>
+                 <img src="../assets/imgs/français.jpg">
+               </ion-thumbnail>
+               <h2>Français</h2>
+             
+             </ion-item>
+             
+           </ion-list>
+      
+           <ion-list *ngSwitchCase="'Master 1'">
+              
+               <ion-item>
+                 
+                 <ion-thumbnail item-start>
+                   <img src="../assets/imgs/français.jpg">
+                 </ion-thumbnail>
+                 <h2>Français</h2>
+               
+               </ion-item>
+               
+             </ion-list>
+
+             <ion-list *ngSwitchCase="'Master 2'">
+                
+                 <ion-item>
+                   
+                   <ion-thumbnail item-start>
+                     <img src="../assets/imgs/français.jpg">
+                   </ion-thumbnail>
+                   <h2>Français</h2>
+                 
+                 </ion-item>
+                 
+               </ion-list>
+
+          </div>
 
 </ion-content>
