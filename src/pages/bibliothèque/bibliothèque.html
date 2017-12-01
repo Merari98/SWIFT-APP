@@ -43,74 +43,53 @@
         </ion-segment>
       
       </div>
-      
-      <div [ngSwitch]="pet">
-       
-        <ion-list *ngSwitchCase="'puppies'">
-         
-          <ion-item>
-            
-            <ion-thumbnail item-start>
-              <img src="../assets/imgs/français.jpg">
-            </ion-thumbnail>
-            <h2>Français</h2>
-          
-          </ion-item>
-          
-        </ion-list>
-      
-        <ion-list *ngSwitchCase="'kittens'">
-          
-          <ion-item>
-            
-            <ion-thumbnail item-start>
-              <img src="../assets/imgs/english.jpg">
-            </ion-thumbnail>
-            <h2>Anglais</h2>
-          
-          </ion-item>
-        
-        </ion-list>
-        
-        <ion-list *ngSwitchCase="'licence 3'">
-            
-             <ion-item>
-               
-               <ion-thumbnail item-start>
-                 <img src="../assets/imgs/français.jpg">
-               </ion-thumbnail>
-               <h2>Français</h2>
-             
-             </ion-item>
-             
-           </ion-list>
-      
-           <ion-list *ngSwitchCase="'Master 1'">
-              
-               <ion-item>
-                 
-                 <ion-thumbnail item-start>
-                   <img src="../assets/imgs/français.jpg">
-                 </ion-thumbnail>
-                 <h2>Français</h2>
-               
-               </ion-item>
-               
-             </ion-list>
 
-             <ion-list *ngSwitchCase="'Master 2'">
+    <ion-content [ngSwitch]="pet" class="card-background-page" >
+        <ion-list *ngSwitchCase="'kittens'"> 
+
+            <ion-card>
+                <img src="../assets/imgs/compta.jpg  "/>
+                <div class="card-title">Comptabilité </div>
+              </ion-card>
+      
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'puppies'">
+               
+              <ion-card>
+                    <img src="../assets/imgs/ida.jpg"/>
+                    <div class="card-title">IDA</div>
+                  </ion-card>
+               
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'licence 3'">
+
+               
+                <ion-card>
+                    <img src="../assets/imgs/réseaux.jpg"/>
+                    <div class="card-title">Réseaux Informatique</div>
+                  </ion-card>
                 
-                 <ion-item>
-                   
-                   <ion-thumbnail item-start>
-                     <img src="../assets/imgs/français.jpg">
-                   </ion-thumbnail>
-                   <h2>Français</h2>
-                 
-                 </ion-item>
-                 
-               </ion-list>
+                  
+          </ion-list>
 
-          </div>
+          <ion-list *ngSwitchCase="'Master 1'" >
+             
+              <ion-card>
+                  <img src="../assets/imgs/marketing.jpg"/>
+                  <div class="card-title">Marketing</div>
+                </ion-card>
+          </ion-list>
+          
+          <ion-list *ngSwitchCase="'Master 2'" >
+              
+               <ion-card>
+                   <img src="../assets/imgs/secreatriat.jpg"/>
+                   <div class="card-title">Sécreatriat</div>
+                 </ion-card>
+           </ion-list>
+
+        </ion-content>
 
 </ion-content>
